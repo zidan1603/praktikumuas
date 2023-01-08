@@ -137,8 +137,13 @@ def cetak_daftar_nilai(data):
         print("\nTidak Ada Data \n")
         
 def cetak_hasil_pencarian(dataMhs):
-        print(tabulate(dataMhs, headers="keys", tablefmt="rounded_outline"))
+        print(tabulate(dataMhs, headers="keys", tablefmt="rounded_outline
         
+        
+        ![ss58](https://user-images.githubusercontent.com/115911489/211205500-60637a52-24ec-46b0-ad85-0487c2cc9c5b.JPG)
+
+
+
 - dibawah ini script untuk input_nilai.py
 
 def input_data(data):
@@ -161,38 +166,12 @@ def input_data(data):
     print("Data Berhasil Ditambah!!")
     return data
     
-![ss58](https://user-images.githubusercontent.com/115911489/211204226-e90be004-f18c-438d-9172-d562ca6ac991.JPG)
-
-    
-
-- dibawah ini adalah script untuk input_nilai.py
-
-def input_data(data):
-    # buat inputan untuk mengisi nama
-    nama = input("Masukkan Nama : ")
-    while len(nama) < 3:
-        nama = input("Masukkan Nama : ")
-    
-    # jika nim yang di input tersedia pada variabel data, cetak pesan lalu lakukan input ulang
-    while nama in data['nama']:
-        print("Mahasiswa dengan nama yang sama sudah ada")
-        nama = input("Masukkan Nama : ")
-    
-    nilai = input("masukkan nilai : ")
-    while not nilai.isnumeric():
-        nilai = input("masukkan nilai : ")
-    
-    data['nama'].append(nama)
-    data['nilai'].append(int(nilai))
-    print("Data Berhasil Ditambah!!")
-    return data
     
     
-    
-    ![ss56](https://user-images.githubusercontent.com/115911489/211204310-ea9be7a9-4ee9-4cb9-821c-c95f7e209414.JPG)
+![ss56](https://user-images.githubusercontent.com/115911489/211205551-67824ee6-def9-4b92-9e2b-588ae80c2bd6.JPG)
 
 
-
+    
 
 #Seebelum itu kita harus mendownload pip.tabulate di cmd/command prompt pada pc atau laptop kalian agar tabel yang kita buat bisa muncul di keluarannya nanti 
 
